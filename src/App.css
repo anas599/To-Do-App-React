@@ -1,12 +1,1 @@
-#root {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  gap: 20px;
-}
-
-#todo-list {
-  border: 1px black solid;
-}
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
