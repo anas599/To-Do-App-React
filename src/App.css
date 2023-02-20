@@ -1,0 +1,12 @@
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#todo-list {
+  border: 1px black solid;
+}
