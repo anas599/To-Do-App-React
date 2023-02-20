@@ -3,8 +3,6 @@ import { useState } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-// import toDoList from './assets/javascript/toDoList';
-
 function App() {
   const [array] = useState([
     {
@@ -26,14 +24,20 @@ function App() {
         <p>items will presist in the browser local storage</p>
       </div>
       <div id="todo-logic">
-        <input placeholder="Add to do..." />
+        <input className="inputAdd" placeholder="Add to do..." />
+        <i className="fa-solid fa-circle-plus" />
       </div>
       <div id="todo-list">
         {array.map((x, i) => (
           <div className="listdiv" key={`num${i.toString()}`}>
-            <input type="checkbox" />
-            <p>{x.task}</p>
-            <i className="fa-solid fa-trash" />
+            <div className="taskDiv">
+              <input type="checkbox" />
+              <p>{x.task}</p>
+            </div>
+            <div className="icons">
+              <i id="pen" className="fa-solid fa-pen" />
+              <i className="fa-solid fa-trash" />
+            </div>
           </div>
         ))}
       </div>
